@@ -1,0 +1,25 @@
+package javaapplication123;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class JavaApplication123 {
+    public static void main(String[] args) {
+        
+        //Declarar variáveis
+       Scanner ler = new Scanner(System.in);        
+       DecimalFormat decimal = new DecimalFormat ("0.00");
+       double dolar,reais;
+       //Entrada de dados
+        System.out.println("Insira a quantidade em Dolar: ");
+        dolar = ler.nextDouble();  
+       //Processamento
+      reais = dolar * 5.811950;
+       //Saida de dados 
+        System.out.println("REAIS:" + decimal.format(reais));
+        
+
+       
+    }
+    
+}
+
+
