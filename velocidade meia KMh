@@ -1,0 +1,22 @@
+package javaapplication23;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class JavaApplication23 {
+    public static void main(String[] args) {
+       //Declarar variáveis
+       Scanner ler = new Scanner(System.in);       
+       DecimalFormat decimal = new DecimalFormat("0.00");
+       double distancia, velocidadeMedia;
+       int tempoPercorrido;
+       //Entrada de dados
+        System.out.println("Insira a distancia percorrida: ");
+        distancia = ler.nextDouble();
+        System.out.println("Insira o tempom que demorou pra percorrer a distancia:");
+        tempoPercorrido = ler.nextInt();
+       //Processamento
+       velocidadeMedia =(tempoPercorrido/distancia)* 3.	6;
+       //Saida de dados 
+        System.out.println("Sua velocidade é de: " + decimal.format(velocidadeMedia));
+    }
+    
+}
