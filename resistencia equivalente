@@ -1,0 +1,26 @@
+package javaapplication123;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication123 {
+
+    public static void main(String[] args) {
+
+        //Declarar variáveis
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        double r1, r2, req;
+        //Entrada de dados
+        System.out.println("Insira a primeira resistência:");
+        r1 = ler.nextDouble();
+        System.out.println("Insira a segunda resistência:");
+        r2 = ler.nextDouble();
+        //Processamento
+        req = 1 / ((1 / r1)) + (1 / r2);
+        //Saida de dados 
+        System.out.println("A resistência equivalente é:" + decimal.format(req));
+
+    }
+
+}
